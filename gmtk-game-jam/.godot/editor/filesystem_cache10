@@ -1,0 +1,26 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1785153537
+export_presets.cfg::TextFile/TextFile::-1::1784922693::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::5115802935899256067::1784740013::1784740029::1::::<><><>0<>0<>1c6978e755170e0af82af42c90895032<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1784800693
+::res://assets/Assets/::1784920125
+8bit-pixel-art-night-sky-game-space-landscape-vector.jpg::CompressedTexture2D/CompressedTexture2D::2465223029596116136::1784920120::1784920121::1::::<><><>0<>0<>b80ef63e2877c82cf0c6e326ba00c8e1<>res://.godot/imported/8bit-pixel-art-night-sky-game-space-landscape-vector.jpg-826daf50cacc1183d9f5235cdee79a32.ctex::
+black bg.png::CompressedTexture2D/CompressedTexture2D::2733701553095632648::1784893555::1784893557::1::::<><><>0<>0<>d8fa63d40d462b43fbaed201a7852ab7<>res://.godot/imported/black bg.png-722c9820b5bc1cbc3cb33bc53335f88e.ctex::
+clock.PNG::CompressedTexture2D/CompressedTexture2D::5212898194361697627::1784802324::1784802326::1::::<><><>0<>0<>1d0cafa78887a45a4a881365ab31f4f8<>res://.godot/imported/clock.PNG-e4d8eed8d782974905c0f559cf268358.ctex::
+Main menu.PNG::CompressedTexture2D/CompressedTexture2D::8125710791674298308::1784814020::1784814022::1::::<><><>0<>0<>83339c3b7fa49ac548702e51aa8a0be6<>res://.godot/imported/Main menu.PNG-3f78b698090acee3479497b014be1471.ctex::
+Moon.PNG::CompressedTexture2D/CompressedTexture2D::1648638204535614605::1784810418::1784810439::1::::<><><>0<>0<>d60d8ca91a7a9350207cbd2075dd833d<>res://.godot/imported/Moon.PNG-e1aa736f33f14259c82a46a6be4f560f.ctex::
+Needle.PNG::CompressedTexture2D/CompressedTexture2D::27801213738643501::1784798728::1784800693::1::::<><><>0<>0<>4ed55d72e9883307dbe18d5d74fcb025<>res://.godot/imported/Needle.PNG-21be679cbd664beefd4d3949f3bc2479.ctex::
+Sun.PNG::CompressedTexture2D/CompressedTexture2D::7464514369237431630::1784810437::1784810439::1::::<><><>0<>0<>c54d8234258133571537a5d3a496e871<>res://.godot/imported/Sun.PNG-e4f801225d0941ea5d7a7f590a8e8455.ctex::
+::res://assets/Assets/fonts and SFX/::1784806876
+Alkhemikal.ttf::FontFile/FontFile::8703866969280775672::1784801120::1784801122::1::::<><><>0<>0<>31c43c1495de8b91edd018d14a60dac5<>res://.godot/imported/Alkhemikal.ttf-f6a1b80d295b2331eb56c49e7026bdc6.fontdata::
+Main_menu.mp3::AudioStreamMP3/AudioStreamMP3::393799519090824325::1784806808::1784806876::1::::<><><>0<>0<>e978837dbae704ddfad097fdd52e02e0<>res://.godot/imported/Main_menu.mp3-ed17f167436a572c5ea3ca4097f7f731.mp3str::
+::res://assets/scenes/::1784922341
+game_over.tscn::PackedScene/PackedScene::5649472913831085033::1784922340::0::1::::<><><>0<>0<><>::uid://c6sj0jcufulab::::res://assets/scripts/game_over.gd<>uid://dwahogo4l1mx1::::res://assets/Assets/fonts and SFX/Alkhemikal.ttf<>uid://be7hwu7i5w4lo::::res://assets/Assets/black bg.png
+main.tscn::PackedScene/PackedScene::7265741275686202895::1784922340::0::1::::<><><>0<>0<><>::uid://rvv075m7cw5y::::res://assets/scripts/main.gd<>uid://np48rk0343r::::res://assets/Assets/Needle.PNG<>uid://del4pxamwv7ju::::res://assets/Assets/Sun.PNG<>uid://cgjfw3ookmw3l::::res://assets/Assets/clock.PNG<>uid://xqu3h5pqtdpl::::res://assets/Assets/Moon.PNG<>uid://dwahogo4l1mx1::::res://assets/Assets/fonts and SFX/Alkhemikal.ttf<>uid://be7hwu7i5w4lo::::res://assets/Assets/black bg.png
+main_menu.tscn::PackedScene/PackedScene::6904817519723185725::1784922340::0::1::::<><><>0<>0<><>::uid://bhopmu5u3rj8g::::res://assets/scripts/main_menu.gd<>uid://bbef4l1hqmbv1::::res://assets/Assets/8bit-pixel-art-night-sky-game-space-landscape-vector.jpg<>uid://dwahogo4l1mx1::::res://assets/Assets/fonts and SFX/Alkhemikal.ttf<>uid://dn1fjfuxvdhvw::::res://assets/Assets/Main menu.PNG<>uid://dlpq4j3nsiv14::::res://assets/scenes/main_menu_music.tscn
+main_menu_music.tscn::PackedScene/PackedScene::7963328773895790565::1784892981::0::1::::<><><>0<>0<><>::uid://fu025sxjvte0::::res://assets/Assets/fonts and SFX/Main_menu.mp3
+options_menu.tscn::PackedScene/PackedScene::2265366889203380487::1784922341::0::1::::<><><>0<>0<><>::uid://bhopmu5u3rj8g::::res://assets/scripts/main_menu.gd<>uid://dwahogo4l1mx1::::res://assets/Assets/fonts and SFX/Alkhemikal.ttf<>uid://dlpq4j3nsiv14::::res://assets/scenes/main_menu_music.tscn<>uid://bbef4l1hqmbv1::::res://assets/Assets/8bit-pixel-art-night-sky-game-space-landscape-vector.jpg
+::res://assets/scripts/::1784893106
+game_over.gd::GDScript/GDScript::6986445894236751645::1784803518::0::1::::<>Control<><>0<>0<><>::
+main.gd::GDScript/GDScript::1237883704056953980::1784814053::0::1::::<>Node2D<><>0<>0<><>::
+main_menu.gd::GDScript/GDScript::2907577159892461268::1784893106::0::1::::<>Control<><>0<>0<><>::
