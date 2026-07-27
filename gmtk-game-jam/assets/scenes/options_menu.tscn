@@ -1,0 +1,125 @@
+[gd_scene load_steps=6 format=3 uid="uid://7jmi5rraubs6"]
+
+[ext_resource type="Script" uid="uid://bhopmu5u3rj8g" path="res://assets/scripts/main_menu.gd" id="1_tbuwg"]
+[ext_resource type="FontFile" uid="uid://dwahogo4l1mx1" path="res://assets/Assets/fonts and SFX/Alkhemikal.ttf" id="1_vj1ym"]
+[ext_resource type="PackedScene" uid="uid://dlpq4j3nsiv14" path="res://assets/scenes/main_menu_music.tscn" id="2_nvxrx"]
+[ext_resource type="Texture2D" uid="uid://bbef4l1hqmbv1" path="res://assets/Assets/8bit-pixel-art-night-sky-game-space-landscape-vector.jpg" id="3_1bfk6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ehycp"]
+texture = ExtResource("3_1bfk6")
+
+[node name="Options menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbuwg")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_nvxrx")]
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ehycp")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.083
+anchor_right = 0.371
+anchor_bottom = 0.182
+offset_left = 2.0
+offset_top = 0.215996
+offset_right = -0.392059
+offset_bottom = 0.0639877
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 64
+text = "Options menu"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.081
+anchor_top = 0.386
+anchor_right = 0.3
+anchor_bottom = 0.614
+offset_left = -0.311996
+offset_top = -0.128006
+offset_right = 0.399994
+offset_bottom = 0.127991
+grow_vertical = 2
+
+[node name="Audio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 64
+text = "Audio"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.373
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.303955
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 64
+text = "MUSIC"
+horizontal_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="Panel2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 32
+text = "Turn-off Music"
+
+[node name="Label2" type="Label" parent="Panel2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vj1ym")
+theme_override_font_sizes/font_size = 32
+text = "Play Music"
+horizontal_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel2/VBoxContainer"]
+layout_mode = 2
+min_value = -30.0
+max_value = 0.0
+
+[connection signal="pressed" from="VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="toggled" from="Panel2/VBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="value_changed" from="Panel2/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]

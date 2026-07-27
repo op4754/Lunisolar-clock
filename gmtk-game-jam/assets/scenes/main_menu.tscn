@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5m0loeb7v6hl"]
+
+[ext_resource type="Script" uid="uid://bhopmu5u3rj8g" path="res://assets/scripts/main_menu.gd" id="1_v1ppo"]
+[ext_resource type="Texture2D" uid="uid://bbef4l1hqmbv1" path="res://assets/Assets/8bit-pixel-art-night-sky-game-space-landscape-vector.jpg" id="2_f2xsc"]
+[ext_resource type="FontFile" uid="uid://dwahogo4l1mx1" path="res://assets/Assets/fonts and SFX/Alkhemikal.ttf" id="2_obrqb"]
+[ext_resource type="Texture2D" uid="uid://dn1fjfuxvdhvw" path="res://assets/Assets/Main menu.PNG" id="4_57ux2"]
+[ext_resource type="PackedScene" uid="uid://dlpq4j3nsiv14" path="res://assets/scenes/main_menu_music.tscn" id="4_f2xsc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v71do"]
+texture = ExtResource("2_f2xsc")
+
+[node name="Main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v1ppo")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_v71do")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.349
+anchor_right = 0.229
+anchor_bottom = 0.651
+offset_top = -0.152008
+offset_right = 0.191986
+offset_bottom = 0.151978
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_obrqb")
+theme_override_font_sizes/font_size = 64
+text = "lunisolar Clock"
+
+[node name="Start" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_obrqb")
+theme_override_font_sizes/font_size = 32
+text = "Start"
+
+[node name="Options" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_obrqb")
+theme_override_font_sizes/font_size = 32
+text = "Options
+"
+
+[node name="Quit" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_obrqb")
+theme_override_font_sizes/font_size = 32
+text = "quit
+"
+
+[node name="MainMenu" type="Sprite2D" parent="."]
+position = Vector2(1041, 351)
+scale = Vector2(1.898, 1.898)
+texture = ExtResource("4_57ux2")
+
+[node name="MainMenu2" parent="." instance=ExtResource("4_f2xsc")]
+
+[connection signal="pressed" from="Panel/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

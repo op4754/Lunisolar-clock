@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://dbrtxybuke8tf"]
+
+[ext_resource type="Script" uid="uid://rvv075m7cw5y" path="res://assets/scripts/main.gd" id="1_kpi06"]
+[ext_resource type="Texture2D" uid="uid://np48rk0343r" path="res://assets/Assets/Needle.PNG" id="2_sfrgt"]
+[ext_resource type="Texture2D" uid="uid://del4pxamwv7ju" path="res://assets/Assets/Sun.PNG" id="2_vesw4"]
+[ext_resource type="Texture2D" uid="uid://cgjfw3ookmw3l" path="res://assets/Assets/clock.PNG" id="3_etxf0"]
+[ext_resource type="Texture2D" uid="uid://xqu3h5pqtdpl" path="res://assets/Assets/Moon.PNG" id="4_etxf0"]
+[ext_resource type="FontFile" uid="uid://dwahogo4l1mx1" path="res://assets/Assets/fonts and SFX/Alkhemikal.ttf" id="4_sfrgt"]
+[ext_resource type="Texture2D" uid="uid://be7hwu7i5w4lo" path="res://assets/Assets/black bg.png" id="4_xplbd"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_kpi06")
+sun_texture = ExtResource("2_vesw4")
+moon_texture = ExtResource("4_etxf0")
+
+[node name="BlackBg" type="Sprite2D" parent="."]
+position = Vector2(463, 249)
+scale = Vector2(2, 2)
+texture = ExtResource("4_xplbd")
+
+[node name="ClockBackground" type="Sprite2D" parent="."]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("3_etxf0")
+
+[node name="Needle" type="Sprite2D" parent="."]
+texture = ExtResource("2_sfrgt")
+
+[node name="Target" type="Sprite2D" parent="."]
+position = Vector2(203, 179)
+texture = ExtResource("4_etxf0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Score label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_sfrgt")
+theme_override_font_sizes/font_size = 32
+text = "XX"
+
+[node name="Timer" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_sfrgt")
+theme_override_font_sizes/font_size = 32
+text = "YY"

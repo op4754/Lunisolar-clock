@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlpq4j3nsiv14"]
+
+[ext_resource type="AudioStream" uid="uid://fu025sxjvte0" path="res://assets/Assets/fonts and SFX/Main_menu.mp3" id="1_rcbev"]
+
+[node name="MainMenu" type="AudioStreamPlayer2D"]
+position = Vector2(321, 170)
+stream = ExtResource("1_rcbev")
+autoplay = true
